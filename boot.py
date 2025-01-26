@@ -1,10 +1,3 @@
-# from ota import OTAUpdater
-# # import machine
-# import os
-# import credentials
-
-# # SSID = credentials.WIFI_SSID
-# # PASSWORD = credentials.WIFI_PASSWORD
 
 import network
 import machine
@@ -14,14 +7,14 @@ import ota
 import credentials
 
 # Nazwa urządzenia (unikalna dla każdego mikroprocesora)
-DEVICE_NAME = "device_1"
+DEVICE_NAME = "device_2"
 
 # Konfiguracja Wi-Fi
 WIFI_SSID = credentials.WIFI_SSID
 WIFI_PASSWORD = credentials.WIFI_PASSWORD
 
 # Adres serwera Flask z OTA
-OTA_SERVER_URL = "http://192.168.1.111:8080"
+OTA_SERVER_URL = credentials.SERVER_URL
 
 def connect_to_wifi():
     """Funkcja łącząca mikroprocesor z siecią Wi-Fi."""
@@ -65,34 +58,3 @@ def main():
         machine.reset()
 
 main()
-
-
-
-
-
-
-# def main():
-#     # Skonfiguruj parametry Wi-Fi oraz URL serwera Flask
-#     SSID = credentials.WIFI_SSID
-#     PASSWORD = credentials.WIFI_PASSWORD
-#     server_url = 'http://192.168.1.111:8080'  # URL do lokalnego serwera Flask
-
-#     try:
-#         # Inicjalizacja aktualizatora OTA
-#         updater = OTAUpdater(SSID, PASSWORD, server_url)
-        
-#         # Sprawdzenie dostępności aktualizacji i jej ewentualne pobranie
-#         updater.download_and_install_update_if_available()
-
-#     except Exception as e:
-#         print(f"Nie udało się połączyć z serwerem OTA: {e}")
-#         print("Uruchamianie lokalnego pliku main.py...")
-        
-#         # Sprawdź, czy plik main.py istnieje
-#         if 'main.py' in os.listdir():
-#             import main  # Importuje i uruchamia plik main.py
-#         else:
-#             print("Brak pliku main.py na urządzeniu!")
-
-# # Uruchom funkcję main()
-# main()
