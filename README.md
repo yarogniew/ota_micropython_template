@@ -1,10 +1,6 @@
 [# ota_test](https://arduino.net.pl/index.php/ota-dla-mikroprocesorow-tutorial/)
 
 
-Twój tutorial jest dobrze napisany i czytelny, ale można wprowadzić kilka poprawek, aby był bardziej precyzyjny i zrozumiały dla użytkowników. Oto zaktualizowana wersja:
-
----
-
 ### **Poradnik użycia OTA dla mikroprocesorów z MicroPython**
 
 #### **1. Przygotowanie mikroprocesora**
@@ -56,6 +52,3 @@ Twój tutorial jest dobrze napisany i czytelny, ale można wprowadzić kilka pop
 - Jeśli w przyszłości chcesz zaktualizować oprogramowanie mikroprocesora, wystarczy podmienić plik `main.py` w folderze urządzenia (np. `device_1`) i zwiększyć numer wersji w pliku `version.json`.
 - Kod serwera Flask i obsługi OTA dla mikroprocesora znajdziesz w repozytorium GitHub.  
 
----
-
-Ta wersja jest bardziej szczegółowa i krok po kroku prowadzi użytkownika przez cały proces. Dodatkowo, uwagi końcowe dają użytkownikowi wskazówki, jak zarządzać aktualizacjami w przyszłości. Jeśli masz inne uwagi, możemy dalej to dopracować. 😊
