@@ -7,7 +7,7 @@ import ota
 import credentials
 
 # Nazwa urządzenia (unikalna dla każdego mikroprocesora)
-DEVICE_NAME = "device_2"
+DEVICE_NAME = credentials.DEVICE_NAME
 
 # Konfiguracja Wi-Fi
 WIFI_SSID = credentials.WIFI_SSID
